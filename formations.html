@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Formations - EFREI Informatique - Département informatique EFREI Paris"><title>Formations - EFREI Informatique</title><link rel="stylesheet" href="css/style.css"></head><body><header class="site-header" id="top">
+  <nav class="navbar" aria-label="Navigation principale">
+    <a class="brand" href="index.html" aria-label="Accueil EFREI informatique">
+      <span>EFREI<br><small>Département Informatique</small></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="formations.html">Formations</a></li>
+      <li><a href="equipe.html">Équipe</a></li>
+      <li><a href="campus.html">Campus</a></li>
+      <li><a href="partenariats.html">Partenariats</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+    </ul>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Changer le thème">☾</button>
+    <a class="header-logo" href="index.html" aria-label="Logo EFREI Paris">
+      <img src="images/logo-efrei.png" alt="Logo EFREI Paris">
+    </a>
+  </nav>
+</header>
+<main class="page"><section class="container reveal"><div class="section-title"><p class="eyebrow">Formations</p><h1>Du bachelor au cycle ingénieur</h1><p>Objectif : développer une expertise technique, apprendre la gestion de projet et créer des solutions innovantes.</p></div>
+<div class="toolbar"><input id="formationSearch" type="search" placeholder="Rechercher : IA, web, cybersécurité..."><select id="niveauFilter"><option value="all">Tous les niveaux</option><option value="bachelor">Bachelor</option><option value="ingenieur">Cycle ingénieur</option></select></div>
+<div class="cards formation-list">
+<article class="card formation-card" data-niveau="bachelor" data-keywords="web ia base données developpeur"><h2>Bachelor Informatique</h2><p>Développement web et mobile, bases de données, algorithmique, IA et projets.</p><button class="more-btn">Voir le détail</button><div class="more-content"><ul><li>Modalités : initiale ou alternance</li><li>Débouchés : développeur full-stack, consultant SI</li><li>Compétences : front-end, back-end, gestion de projet</li></ul></div></article>
+<article class="card formation-card" data-niveau="bachelor" data-keywords="cybersecurite reseaux administrateur"><h2>Cybersécurité & Réseaux</h2><p>Systèmes, réseaux, sécurité, supervision et bonnes pratiques cyber.</p><button class="more-btn">Voir le détail</button><div class="more-content"><ul><li>CTF et audits simples</li><li>Administration systèmes</li><li>Débouchés : admin réseau, technicien cyber</li></ul></div></article>
+<article class="card formation-card" data-niveau="ingenieur" data-keywords="logiciels si cloud devops"><h2>Information Technology</h2><p>Logiciels, systèmes d'information, architecture cloud et DevOps.</p><button class="more-btn">Voir le détail</button><div class="more-content"><ul><li>Projets de fin d’études</li><li>Stages longs en entreprise</li><li>Métiers : ingénieur logiciel, DevOps</li></ul></div></article>
+<article class="card formation-card" data-niveau="ingenieur" data-keywords="data science intelligence artificielle machine learning big data"><h2>Data Science & IA</h2><p>Analyse de données, machine learning, big data et visualisation.</p><button class="more-btn">Voir le détail</button><div class="more-content"><ul><li>Python, data, modèles IA</li><li>Projets avec jeux de données</li><li>Métiers : data scientist, ML engineer</li></ul></div></article>
+</div><p class="empty" id="emptyFormations">Aucune formation trouvée.</p></section>
+
+<section class="container reveal permanence-section" id="permanences">
+  <div class="section-title">
+    <p class="eyebrow">Soutien pédagogique</p>
+    <h2>Permanences de la semaine</h2>
+    <p>Les permanences sont des séances de soutien organisées pour aider les étudiants dans une matière précise.</p>
+  </div>
+
+  <div class="permanence-tools">
+    <input id="permanenceSearch" type="search" placeholder="Rechercher une matière ou un professeur...">
+    <select id="jourFilter" aria-label="Filtrer par jour">
+      <option value="all">Tous les jours</option>
+      <option value="lundi">Lundi</option>
+      <option value="mardi">Mardi</option>
+      <option value="mercredi">Mercredi</option>
+      <option value="jeudi">Jeudi</option>
+      <option value="vendredi">Vendredi</option>
+    </select>
+  </div>
+
+  <div class="table-wrapper">
+    <table class="permanence-table">
+      <caption>Planning hebdomadaire des séances de permanence</caption>
+      <thead>
+        <tr>
+          <th scope="col">Jour</th>
+          <th scope="col">Horaire</th>
+          <th scope="col">Matière</th>
+          <th scope="col">Professeur</th>
+          <th scope="col">Salle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-jour="lundi" data-keywords="algorithmique alexandre laurent algo">
+          <td>Lundi</td>
+          <td>12h30 - 14h00</td>
+          <td>Algorithmique</td>
+          <td>M. Alexandre Laurent</td>
+          <td>B204</td>
+        </tr>
+        <tr data-jour="mardi" data-keywords="developpement web claire dubois html css javascript">
+          <td>Mardi</td>
+          <td>17h15 - 18h45</td>
+          <td>Développement Web</td>
+          <td>Mme Claire Dubois</td>
+          <td>Lab Web</td>
+        </tr>
+        <tr data-jour="mercredi" data-keywords="bases de donnees sql karim benali">
+          <td>Mercredi</td>
+          <td>13h00 - 14h30</td>
+          <td>Bases de données</td>
+          <td>M. Karim Benali</td>
+          <td>C112</td>
+        </tr>
+        <tr data-jour="jeudi" data-keywords="cybersecurite reseaux sarah moreau securite">
+          <td>Jeudi</td>
+          <td>16h00 - 17h30</td>
+          <td>Cybersécurité & Réseaux</td>
+          <td>Mme Sarah Moreau</td>
+          <td>Cyber Lab</td>
+        </tr>
+        <tr data-jour="vendredi" data-keywords="intelligence artificielle ia machine learning nicolas petit">
+          <td>Vendredi</td>
+          <td>11h00 - 12h30</td>
+          <td>Intelligence Artificielle</td>
+          <td>M. Nicolas Petit</td>
+          <td>A305</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="empty" id="emptyPermanences">Aucune permanence trouvée.</p>
+  <p class="permanence-note" id="nextPermanence">Astuce : utilisez la recherche pour trouver rapidement une matière.</p>
+</section>
+</main><footer class="footer">
+  <div class="footer-wave" aria-hidden="true"></div>
+  <div class="container footer-grid advanced-footer">
+    <div class="footer-brand">
+      <p class="footer-logo-text">EFREI Paris</p>
+      <p>Site vitrine étudiant du département informatique.</p>
+      <p class="footer-small">Projet réalisé dans le cadre d’un travail web HTML, CSS et JavaScript.</p>
+    </div>
+    <div class="footer-contact">
+      <h2>Adresse</h2>
+      <address>
+        Efrei Paris<br>
+        30-32 Av. de la République<br>
+        94800 Villejuif<br>
+        Tél : <a href="tel:+33188289001">+33 1 88 289 001</a>
+      </address>
+    </div>
+    <div class="footer-links">
+      <h2>Navigation</h2>
+      <a href="formations.html">Formations</a>
+      <a href="equipe.html">Équipe</a>
+      <a href="campus.html">Campus</a>
+      <a href="partenariats.html">Partenariats</a>
+      <a href="contact.html">Contact</a>
+      <a href="apropos.html">À propos</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 - Département Informatique EFREI</span>
+    <span>HTML valide • CSS séparé • JS séparé • Responsive</span>
+  </div>
+</footer><button class="back-top" id="backTop" aria-label="Retour en haut">↑</button><script src="js/script.js"></script></body></html>
